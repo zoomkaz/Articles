@@ -1,0 +1,103 @@
+.card {
+  width: 100%;
+  min-width: 702px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  max-width: 702px;
+  height: 230px;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 12px;
+  transition: all 0.2s linear;
+  padding-right: 20px;
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.08);
+  }
+  display: flex;
+  gap: 20px;
+  img {
+    max-width: 306px;
+    min-width: 306px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+}
+
+.card_right-side {
+  position: relative;
+  width: 55%;
+}
+
+.title,
+.text {
+  margin: 5px 0;
+}
+
+.social {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  &:hover {
+    cursor: default;
+  }
+  .icons {
+    display: flex;
+    align-items: center;
+    .like,
+    .dislike,
+    .comment {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      transition: all 0.2s linear;
+      &:hover {
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.06);
+      }
+    }
+    .like {
+      background: url("../../../icons/like.svg") center center no-repeat;
+    }
+    .dislike {
+      background: url("../../../icons/dislike.svg") center center no-repeat;
+    }
+    .comment {
+      background: url("../../../icons/comment.svg") 20% center no-repeat;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 50px;
+      padding: 0 5px;
+      color: grey;
+    }
+  }
+  .view_container {
+    display: flex;
+    .quantity_views {
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+      color: grey;
+    }
+    .view {
+      width: 40px;
+      height: 40px;
+      background: url("../../../icons/view.svg") center center no-repeat;
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.author-name {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}

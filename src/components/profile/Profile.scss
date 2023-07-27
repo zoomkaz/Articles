@@ -1,0 +1,135 @@
+.profile_container {
+  margin-top: 70px;
+  max-width: 700px;
+  min-width: 700px;
+  background-color: white;
+  padding: 20px 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s linear;
+  h1 {
+    margin-top: 0;
+    padding: 0 10px;
+  }
+}
+
+.userdata_container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile_username,
+.profile_email,
+.profile_tags {
+  background-color: inherit;
+  border-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 10px;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  &:hover {
+    box-shadow: inset 1000px 0 2px 1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    &::after {
+      content: url("../../../icons/edit.svg");
+      position: absolute;
+      right: 10px;
+    }
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
+
+.profile_tags {
+  &:hover {
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.profile_pass {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.06);
+  input {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.001);
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 12px;
+  }
+}
+
+.profile_new-username,
+.profile_new-email {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.06);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  margin-top: -10px;
+  padding: 10px;
+  label {
+    input {
+      margin-left: 10px;
+      background-color: inherit;
+      border: 0;
+      outline: none;
+      font-size: 16px;
+      width: 40%;
+    }
+  }
+}
+
+.profile_save {
+  border-radius: 12px;
+  padding: 5px 10px;
+  border: 0;
+  background-color: white;
+  font-size: 14px;
+  transition: all 0.2s linear;
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.06);
+  }
+}
+
+.profile-img {
+  padding: 20px 0;
+  border-radius: 12px;
+}
+
+.save-img {
+  background-color: coral;
+  border-radius: 12px;
+  padding: 10px 20px;
+  border: 0;
+  color: white;
+  transition: all 0.2s linear;
+  &:hover {
+    transform: scale(1.1);
+  }
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.back-profile {
+  position: fixed;
+  left: 310px;
+  top: 115px;
+}

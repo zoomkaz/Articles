@@ -1,0 +1,32 @@
+.users-list {
+  margin-top: 40px;
+}
+
+.users-info {
+  position: relative;
+  .delete {
+    right: 10px;
+  }
+
+  .user-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.no-img {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  color: white;
+  font-weight: 600;
+  font-size: 44px;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.admin-users {
+  width: 30%;
+}

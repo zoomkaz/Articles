@@ -1,0 +1,12 @@
+.admin_container {
+  margin-top: 80px;
+  max-width: 700px;
+  min-width: 700px;
+  margin-bottom: 80px;
+}
+
+.back-admin {
+  position: fixed;
+  left: 310px;
+  top: 115px;
+}

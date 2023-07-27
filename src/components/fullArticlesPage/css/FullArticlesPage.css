@@ -1,0 +1,37 @@
+.full-article_container {
+  margin: 80px 0 100px 0;
+  max-width: 700px;
+  min-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.full-article_container .full-author {
+  position: fixed;
+  top: 26px;
+  z-index: 2;
+  font-weight: 800;
+  font-size: 18px;
+}
+.full-article_container .full-title {
+  font-size: 36px;
+  font-weight: 800;
+}
+.full-article_container .full-text {
+  font-size: 20px;
+}
+.full-article_container .full-views {
+  font-size: 12px;
+}
+.full-article_container img {
+  max-width: 100%;
+  max-height: 500px;
+  margin: 20px 0;
+  border-radius: 12px;
+}
+
+.back-full {
+  position: fixed;
+  left: 310px;
+  top: 115px;
+}

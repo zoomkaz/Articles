@@ -1,0 +1,54 @@
+.header {
+  width: 97.2%;
+  height: 70px;
+  margin-top: -10px;
+  background-color: #f3f3f2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.login {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: 0;
+  background-color: rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+  transition: all 0.2s linear;
+}
+.login:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+.right_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add {
+  width: 35px;
+  height: 35px;
+  background: url("../../../icons/plus.svg") center center no-repeat;
+  transition: all 0.2s linear;
+  border-radius: 12px;
+  padding: 0 3px;
+}
+.add:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.add:active {
+  transform: scale(0.9);
+}
