@@ -112,34 +112,55 @@ const UsersList = () => {
     axios.get(`http://localhost:3333/articles?userId=${id}`)
       .then(res => {
         const usersArticles = res.data;
-        usersArticles.forEach((elem: any, index: number) => {
-          setTimeout(() => {
-            axios.delete(`http://localhost:3333/articles/${elem.id}`)
-              .catch(e => alert(e))
-          }, index * 100);
-          if (index + 1 === usersArticles.length) {
+        if (usersArticles.length) {
+          usersArticles.forEach((elem: any, index: number) => {
             setTimeout(() => {
-              axios.delete(`http://localhost:3030/users/${id}`)
-                .then(res => {
-                  if (res.status === 200) {
-                    border.style.boxShadow = `0 0 10px 5px lightgreen`;
-                    setTimeout(() => {
-                      border.style.boxShadow = `none`;
-                      setTimeout(() => {
-                        document.location.reload()
-                      }, 500);
-                    }, 1000);
-                  } else {
-                    border.style.boxShadow = `0 0 10px 5px red`;
-                    setTimeout(() => {
-                      border.style.boxShadow = `none`;
-                    }, 1000);
-                  }
-                })
+              axios.delete(`http://localhost:3333/articles/${elem.id}`)
                 .catch(e => alert(e))
-            }, (index + 1) * 100);
-          }
-        })
+            }, index * 100);
+            if (index + 1 === usersArticles.length) {
+              setTimeout(() => {
+                axios.delete(`http://localhost:3030/users/${id}`)
+                  .then(res => {
+                    if (res.status === 200) {
+                      border.style.boxShadow = `0 0 10px 5px lightgreen`;
+                      setTimeout(() => {
+                        border.style.boxShadow = `none`;
+                        setTimeout(() => {
+                          document.location.reload()
+                        }, 500);
+                      }, 1000);
+                    } else {
+                      border.style.boxShadow = `0 0 10px 5px red`;
+                      setTimeout(() => {
+                        border.style.boxShadow = `none`;
+                      }, 1000);
+                    }
+                  })
+                  .catch(e => alert(e))
+              }, (index + 1) * 100);
+            }
+          })
+        } else {
+          axios.delete(`http://localhost:3030/users/${id}`)
+            .then(res => {
+              if (res.status === 200) {
+                border.style.boxShadow = `0 0 10px 5px lightgreen`;
+                setTimeout(() => {
+                  border.style.boxShadow = `none`;
+                  setTimeout(() => {
+                    document.location.reload()
+                  }, 500);
+                }, 1000);
+              } else {
+                border.style.boxShadow = `0 0 10px 5px red`;
+                setTimeout(() => {
+                  border.style.boxShadow = `none`;
+                }, 1000);
+              }
+            })
+            .catch(e => alert(e))
+        }
       })
       .catch(e => alert(e))
   }

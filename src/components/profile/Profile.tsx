@@ -211,7 +211,7 @@ const Profile = () => {
     const img = e.target.parentElement.children[2].src;
     const border = document.getElementById('border');
 
-    if (img && img !== 'http://localhost:3000/admin') {
+    if (img && img !== 'http://localhost:3000/admin' && img.length < 1500) {
       axios.patch(`http://localhost:3030/users/${userId}`, {
         userImg: img
       }, { headers: { "Content-Type": "application/json" } })
@@ -237,6 +237,7 @@ const Profile = () => {
       setTimeout(() => {
         border.style.boxShadow = '0 0 10px 5px rgba(0, 0, 0, 0.06)';
       }, 2000);
+      alert('Фотография должна быть и её размер не должен превышать 1,12 КБ')
     }
   }
 
@@ -246,7 +247,7 @@ const Profile = () => {
       <div className='profile_container' id='border'>
         <h1>Ваши данные</h1>
         <div className="userdata_container">
-          <img src={userData.userImg} alt="user-pic" />
+          {userData.userImg ? <img src={userData.userImg} alt="user-pic" /> : <div>Нет фото</div>}
           <label className="input-file profile-img">
             <input type="file" id={`file`} name='file' onChange={setImg} />
             <span>Фото</span>
