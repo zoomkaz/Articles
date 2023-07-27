@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Articles/static/css/main.e922cb40.css",
+    "main.js": "/Articles/static/js/main.cba5b953.js",
+    "static/js/787.c1112931.chunk.js": "/Articles/static/js/787.c1112931.chunk.js",
+    "static/media/delete.svg": "/Articles/static/media/delete.c3dc8a649eb7bba98f42.svg",
+    "static/media/comment.svg": "/Articles/static/media/comment.ad7cc333798bac5c52d6.svg",
+    "static/media/no_image.svg": "/Articles/static/media/no_image.af8fd986b9ef082ae5be.svg",
+    "static/media/dislike.svg": "/Articles/static/media/dislike.5579be8fa93fe0e90967.svg",
+    "static/media/send.svg": "/Articles/static/media/send.2e8f5ca4a261c73863f3.svg",
+    "static/media/like.svg": "/Articles/static/media/like.8a334eaa23afd5a411db.svg",
+    "static/media/edit.svg": "/Articles/static/media/edit.e08b52f37da34cbe9128.svg",
+    "index.html": "/Articles/index.html",
+    "static/media/back.svg": "/Articles/static/media/back.540f225ec044e6a2ef29.svg",
+    "static/media/view.svg": "/Articles/static/media/view.ee2146fe1b9ed7b9b9c1.svg",
+    "static/media/prev.svg": "/Articles/static/media/prev.d8d7d160ca1bf2f58f45.svg",
+    "static/media/next.svg": "/Articles/static/media/next.ca650a4d2b0e4edcfd42.svg",
+    "static/media/plus.svg": "/Articles/static/media/plus.556e02784444314a519a.svg",
+    "main.e922cb40.css.map": "/Articles/static/css/main.e922cb40.css.map",
+    "main.cba5b953.js.map": "/Articles/static/js/main.cba5b953.js.map",
+    "787.c1112931.chunk.js.map": "/Articles/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e922cb40.css",
+    "static/js/main.cba5b953.js"
+  ]
+}
