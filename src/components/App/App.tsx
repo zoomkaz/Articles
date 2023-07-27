@@ -9,7 +9,8 @@ import AddArticle from '../addArticle/AddArticle';
 import Profile from '../profile/Profile';
 import Admin from '../admin/Admin';
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
       <Routes>

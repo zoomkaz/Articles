@@ -19,6 +19,7 @@ const Header = () => {
     localStorage.removeItem("username")
     localStorage.removeItem("userid")
     localStorage.removeItem("admin")
+    localStorage.removeItem("userImg")
     setAuth(false)
     document.location.href = '/'
   }
